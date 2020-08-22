@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+
+//let m = tz.('africa/maseru');
+
+
 const Schema = mongoose.Schema;
 
 const postSchema = new Schema({
@@ -8,5 +12,6 @@ const postSchema = new Schema({
     type:String,
     required: true
     }
+    
 })
 module.exports = mongoose.model('userPost', postSchema);
